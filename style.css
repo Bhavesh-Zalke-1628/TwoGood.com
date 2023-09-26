@@ -1,0 +1,89 @@
+/* @font-face{
+    font-family: main;
+    src: url("/Futura-Bold.ttf");
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 20vh;
+}
+
+#page1 h1 {
+    font-size: 11vw;
+    text-transform: uppercase;
+    line-height: 11vw;
+    letter-spacing: -0.9vw;
+    font-family: futura;
+    width: 65%;
+}
+
+*::selection {
+    background-color: black;
+    color: #fff;
+}
+
+#videoContainer {
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    background-color: rgb(169, 167, 167);
+}
+
+#videoContainer video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#videoContainer #play {
+    height: 10px;
+    border-radius: 50%;
+    width: 10px;
+    padding: 3vw 3vw;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: futura;
+    cursor: pointer;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellow; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 1vw;
+}
+#page2 .elem {
+    height: 100%;
+    width: 31%;
+    background-color: #000;
+}
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
