@@ -36,7 +36,7 @@ function loadingAnimation() {
         stagger: 0.3,
     })
     gsap.from("#page1 #videoContainer", {
-        scale : 0.9,
+        scale: 0.9,
         opacity: 0,
         delay: 1,
         deration: 0.3,
@@ -44,3 +44,11 @@ function loadingAnimation() {
     })
 }
 loadingAnimation()
+
+const cur = document.getElementById("cursor")
+cur.addEventListener("mousemove", function (dets) {
+    gsap.to(cur, {
+        left: dets.x,
+        left: dets.y
+    })
+})

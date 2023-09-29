@@ -81,6 +81,10 @@ body {
     height: 100%;
     width: 31%;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #page2 .elem img {
@@ -90,11 +94,60 @@ body {
     scale: 1.1;
 }
 
-/* #page3 {
-    height: 100vh;
-    width: 100%;
-} */
+#page2 .elem .dets {
+    height: 60px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: palegoldenrod;
+    z-index: 999;
+}
 
+#page2 .elem .dets:hover {
+    height: 200px;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+}
+.child{
+    height: 54vh;
+    width: 38%;
+    /* background-color: red;
+    border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20%;
+}
+.child img{
+    height: 70%;
+    width: fit-content;
+    object-fit: co;
+}
+.child>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cursor{
+    height: 100px;
+    width: 100px;
+    background-color: palegoldenrod;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
 @media (max-width:600px) {
     #page1 {
         /* background-color: red; */
